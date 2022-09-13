@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
 
 :root{
     --black: #000000;
@@ -20,10 +21,25 @@ ul{
 section{
     width: 100%;
     min-height:600px;
-    padding: 50px;
+    padding: 60px;
     margin: 0;
     border: 0;
+    scroll-margin-top:0;
+    height: 100vh;
 
+}
+
+.mainTitle{
+    font-size: 9em;
+    font-style: bold;
+    font-family: Antonio;
+}
+.mainTitle .tab{
+    margin-left: 50px;
+}
+
+.subtitle{
+    font-size: 1.5em;
 }
 
 #contact{

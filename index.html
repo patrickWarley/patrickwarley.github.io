@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="br">
 <head>
+
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./css/mainNav.css"/>
+    <link rel="stylesheet" href="./css/animations.css"/>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">PW</a>
+        <a href="#main" class="logo">PW</a>
         
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu"/>
@@ -22,7 +26,7 @@
                     <a href="#summary"> Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#hobbiesinterests">Interesses</a>
+                    <a href="#hobbiesinterests" id="hobbiesinterestsLink">Interesses</a>
                 </li>
                 <li>
                     <a href="#contact">Contato</a>
@@ -31,6 +35,10 @@
         </nav>
     </header>
     <main>
+        <section id="main">
+            <div class="mainTitle">Prazer,<br/><span class="tab">Patrick</span></div>
+            <div class="subtitle">Resolvedor de problemas informáticos.</div> 
+        </section>
         <section id="summary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet vitae leo sit amet venenatis.
             Duis sodales lacus sed diam sodales ultrices. Sed laoreet gravida eros ac euismod.
@@ -68,5 +76,6 @@
             </form>
         </section>
     </main>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

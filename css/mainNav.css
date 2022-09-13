@@ -1,7 +1,6 @@
 .header{
     display: inline-block;
     top:0;
-    position: sticky;
     width: 100%;
     background-color: var(--black);
     color: white;
@@ -17,7 +16,6 @@
 .mainNav{
     width: 100%;
     height: 100%;    
-    position: fixed;
     background-color: var(--black);
     overflow: hidden;
 }
@@ -95,8 +93,6 @@
 @media(min-width:768px){
     .mainNav{
         max-height: none;
-        top:0;
-        position: relative;
         float:right;    
         width: fit-content;
     } 
