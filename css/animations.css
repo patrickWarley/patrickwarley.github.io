@@ -1,8 +1,12 @@
-.fadein{
-animation: fadeinframes;
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 2s all ease;
 }
 
-@keyframes fadeinframes{
-    from{opacity: 0;}
-    to{opacity: 1;}
+/* all elements with the class reveal will be shown when the class active is added*/
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
