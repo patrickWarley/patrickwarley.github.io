@@ -1,4 +1,4 @@
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(100px);
     opacity: 0;
@@ -6,7 +6,7 @@
 }
 
 /* all elements with the class reveal will be shown when the class active is added*/
-.reveal.active{
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
 }

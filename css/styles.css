@@ -22,45 +22,130 @@ ul {
 
 section {
     width: 100%;
-    min-height: 600px;
-    padding: 60px;
+    padding: 40px;
     margin: 0;
     border: 0;
     scroll-margin-top: 0;
-    height: 100vh;
+    min-height: 600px;
+}
 
+
+
+.inputgroup {
+    padding: 20px;
 }
 
 .pad20px {
     padding: 20px;
 }
 
-.mainImage {
+.projectsPreview {
     background-color: red;
     border: 1px solid black;
     display: none;
 }
 
-/*I can link each subtitle with one div showing a little bit of sauce*/
-.subtitle:hover~.mainImage {
-    display: block;
+.w-100 {
+    width: 100%;
 }
 
-/*smaller screens configs*/
-@media(max-width:768px) {
+.h-100 {
+    height: 100%;
+}
+
+.card {
+    padding: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 100%;
+    float: left;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -6px #000000;
+}
+
+.card p {
+    display: flex;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+#skillsPainel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cardimg {
+    display: flex;
+    margin: 20px auto;
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #C0C0C0;
+    box-shadow: 0px 0px 16px -6px #000000;
+}
+
+/*bigger screens configs*/
+@media(min-width:768px) {
 
     /*In smaller screens the subtitles are each one on a line*/
     .subtitle {
         display: block;
     }
+
+    #skillsPainel {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 40%;
+        display: inline;
+    }
 }
 
 /*remember that the elements should have a width property*/
-.centralizedcontainer {
+.container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.centerVertical {
     justify-content: center;
+}
+
+.centerHorizontal {
     align-items: center;
 }
+
+/*it's no use centralize a element that has the same size than the parent*/
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px;
+}
+
+.iconredes {
+    display: inline;
+    font-size: 3em;
+    padding: 10px;
+    color: #000000;
+    background-color: gold;
+
+    border-radius: 20px;
+}
+
+.iconredes:hover {
+    background-color: white;
+    color: gold;
+}
+
+.redesNav {}
 
 .mainTitle {
     font-size: 9em;
@@ -69,15 +154,16 @@ section {
 }
 
 .mainTitle .tab {
-    margin-left: 100px;
-}
-
-.mainTitle:hover {
-    color: white;
+    margin-left: 0.4em;
 }
 
 .subtitle {
     font-size: 1.5em;
+}
+
+.subtext {
+    margin-top: 20px;
+    font-size: medium;
 }
 
 .onTop {
@@ -88,34 +174,10 @@ section {
 .subtitle:hover {
     font-weight: bold;
     font-size: 2em;
-    color: white;
 }
 
 #main {
     position: relative;
-}
-
-#main:hover {
-    background-color: black;
-}
-
-.maincopy:hover {
-    background-color: white;
-}
-
-/*I using this class to add a effect to the main section, once the user hovers the subtitle*/
-.maincopy {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 600px;
-    padding: 60px;
-    margin: 0;
-    border: 0;
-    scroll-margin-top: 0;
-    height: 100vh;
-    z-index: auto;
 }
 
 .center {

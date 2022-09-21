@@ -11,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/3842b7f66e.js" crossorigin="anonymous"></script>
+
     <title>Portfolio</title>
 </head>
 
@@ -25,7 +27,7 @@
         <nav class="mainNav">
             <ul class="menu">
                 <li>
-                    <a href="#summary"> Sobre mim</a>
+                    <a href="#summary"> Sobre </a>
                 </li>
                 <li>
                     <a href="#hobbiesinterests" id="hobbiesinterestsLink">Interesses</a>
@@ -41,48 +43,89 @@
             <span class="mainTitle onTop">Prazer,<br /><span class="tab">Patrick</span></span>
             </br>
             <span class="subtitle onTop">Desenvolvedor FullStack.</span>
-            <span class="subtitle onTop">Desenhista.</span>
-            <span class="subtitle onTop">Corredor de fim de semana.</span>
-            <div class="mainImage">
-                <h1>Testandooooooo</h1>
-            </div>
-            <div class="maincopy"></div>
+            <footer class="footer container centerHorizontal">
+                <div class="redesNav">
+                    <div class="iconredes"><i class="fa-brands fa-github"></i></div>
+                    <div class="iconredes"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="subtext">patrickwarley@gmail.com</div>
+                </div>
+                </div>
+            </footer>
         </section>
-        <section id="summary" class="primarySecondary centralizedcontainer">
+        <section id="summary" class="primarySecondary container centerVertical centerHorizontal">
             <div class="reveal ">
-                <div">
+                <div>
+                    <i class="fa-solid fa-code"></i>
                     <h1 class="title1">Seja bem vindo</h1>
-                    <p>Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.</p>
-            </div>
-            </div>
-        </section>
-        <section id="hobbiesinterests" class="secondaryPrimary centralizedcontainer">
-            <div class="reveal">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet vitae leo sit
-                    amet venenatis.
-                    Duis sodales lacus sed diam sodales ultrices. Sed laoreet gravida eros ac euismod.
-                    Nunc felis odio, viverra id diam molestie, aliquam pulvinar erat.
-                    Proin quis sodales felis.
-                    Morbi dapibus pellentesque ex sit amet tincidunt.
-                    Nullam fermentum congue magna, eget vulputate libero finibus eu.
-                    Aenean eu ex volutpat lorem suscipit condimentum.
-                    Nulla semper hendrerit elit quis efficitur.
-                    In a accumsan libero.
-                    Praesent sed vulputate risus
-                </p>
+                    <p>
+                        Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
+                    </p>
+                    <p>
+                        O que me atraiu a programação foi a chance de aprender sobre o trabalho e a rotina de diferentes
+                        areas.
+                    </p>
+                </div>
             </div>
         </section>
-        <section id="contact" class="primarySecondary  centralizedcontainer">
+        <section id="hobbiesinterests" class="secondaryPrimary container">
+            <div class="reveal w-100 h-100">
+                <div id="skillsPainel" class="centerHorizontal">
+                    <div class="card center secondaryPrimary">
+
+                        <div class="cardimg centerHorizontal centerVertical">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+
+                        <div class="cardtitle">
+                            <h1 class="">Back-End</h1>
+                        </div>
+                        <div class="cardbody">
+                            <p>Minha primeira experiencia com programação Back-End foi com Java, hoje em dia minha
+                                paixão e o javascript.</p>
+                            <div>
+                                <h3>Linguagens e frameworks:</h3>
+                                <p>Java, Javascript, Nodejs, MongoDb, SQL, Moongose</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card center secondaryPrimary">
+
+                        <div class="cardimg centerHorizontal centerVertical">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div class="cardtitle">
+                            <h1 class="">Front-End</h1>
+                        </div>
+                        <div class="cardbody">
+                            <p>Acredito que dominar bem a base, css e html, são essencias para realizar um bom
+                                trabalho com qualquer framework.</p>
+                            <div>
+                                <h3>Linguagens e frameworks:</h3>
+                                <p>HTML, CSS, Javascript, Git, Bootstrap, Tailwind CSS, React</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id=" contact" class="primarySecondary  container">
             <div class='reveal'>
-                <br action="#">
-                <label for="name">Seu nome:</label>
-                <input type="text" id="name" />
-                </br>
-                <label for="email">Email:</label>
-                <input type="email" id="emai" />
-                </br>
-                <label for="message">Mensagem:</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <form action="#">
+                    <div class="container centerHorizontal">
+                        <div class="inputgroup">
+                            <input type="text" id="name" />
+                        </div>
+
+                        <div class="inputgrouP">
+                            <input type="email" id="emai" />
+                        </div>
+                        <div class="inputgroup">
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
