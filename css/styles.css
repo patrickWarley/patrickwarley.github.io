@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Nabla&display=swap');
+
+
 :root {
     --black: #000000;
 }
@@ -27,11 +30,38 @@ section {
     min-height: 600px;
 }
 
+.pageend {
+    background-color: #C0C0C0;
+    min-height: 200px;
+    padding: 50px;
+}
 
+.form {
+    margin-top: 100px;
+}
+
+.submitbutton {
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-self: flex-end;
+}
 
 .inputgroup {
-    padding: 20px;
+    width: 100%;
 }
+
+.inputgroup input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+
 
 .pad20px {
     padding: 20px;
