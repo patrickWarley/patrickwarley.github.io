@@ -23,6 +23,7 @@ ul {
 
 section {
     width: 100%;
+    height: fit-content;
     padding: 40px;
     margin: 0;
     border: 0;
@@ -143,8 +144,6 @@ textarea {
     .form {
         width: 600px;
     }
-
-    ;
 }
 
 /*remember that the elements should have a width property*/
@@ -173,11 +172,11 @@ textarea {
 
 .iconredes {
     display: inline;
-    font-size: 3em;
+    font-size: 2em;
     padding: 10px;
     color: #000000;
     background-color: gold;
-
+    cursor: pointer;
     border-radius: 20px;
 }
 
@@ -200,6 +199,7 @@ textarea {
 
 .subtitle {
     font-size: 1.5em;
+    text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .subtext {
@@ -219,6 +219,19 @@ textarea {
 
 #main {
     position: relative;
+    background-image: url("..//images/fundo.png");
+
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+
+#main .welcome {
+    text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
 .center {

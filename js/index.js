@@ -2,9 +2,9 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
 
-function reveal(entries, observer){
+function reveal(entries, observer) {
     entries.forEach(entry => {
-        if(entry.isIntersecting) 
+        if (entry.isIntersecting)
             return entry.target.classList.add('active');
         return entry.target.classList.remove('active');
     });
@@ -12,12 +12,12 @@ function reveal(entries, observer){
 
 
 //lets use the intersection api
-function setIntersectionObserver(){
+function setIntersectionObserver() {
     //first define the options
     let options = {
         root: null, //root null = viewport
         rootMargin: '0px',
-        threshold: 0.4 
+        threshold: 0.5
         //how much of the element is intersecting the root, is this case how much of the element is visible
         //, 1.0 means that the element mis 100% visible
     }
@@ -26,7 +26,7 @@ function setIntersectionObserver(){
 
     var reveals = document.querySelectorAll('.reveal');
 
-    for(let elem of reveals){
+    for (let elem of reveals) {
         observer.observe(elem)
     }
 }
