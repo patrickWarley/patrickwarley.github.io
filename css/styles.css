@@ -56,9 +56,14 @@ section {
 .inputgroup input,
 textarea {
     width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+
     padding: 10px;
+
     color: white;
     background-color: black;
+    font-size: larger;
 }
 
 
@@ -132,6 +137,12 @@ textarea {
         width: 40%;
         display: inline;
     }
+
+    .form {
+        width: 600px;
+    }
+
+    ;
 }
 
 /*remember that the elements should have a width property*/
