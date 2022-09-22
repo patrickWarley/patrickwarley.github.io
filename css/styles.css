@@ -23,7 +23,7 @@ ul {
 
 section {
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     padding: 40px;
     margin: 0;
     border: 0;
