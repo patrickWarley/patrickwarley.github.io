@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <a href="#main" class="logo">PW</a>
 
         <!-- Hamburger icon -->
@@ -126,14 +126,15 @@
                     <div class="form container">
                         <h1 class="center pad20px">Contato</h1>
                         <div class="inputgroup pad20px">
-                            <input type="text" placeholder="Nome" id="name" />
+                            <input type="text" placeholder="Nome" id="name" required />
                         </div>
 
                         <div class="inputgroup pad20px">
-                            <input type="email" placeholder="Email" id="emai" />
+                            <input type="email" placeholder="Email" id="emai" required />
                         </div>
                         <div class="inputgroup pad20px">
-                            <textarea name="message" placeholder="Mensagem" id="message" cols="30" rows="10"></textarea>
+                            <textarea name="message" placeholder="Mensagem" id="message" cols="30" rows="10"
+                                required></textarea>
                         </div>
                         <button type="submit" class="submitbutton">Enviar</button>
                     </div>
@@ -143,17 +144,16 @@
     </main>
     <footer class="pageend">
         <div class="redesSocias">
-            Redes sociais
-            <ul class="redes">
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Linkedin</a></li>
-            </ul>
-        </div>
-        <div class="links">
-            Links
-            <ul>
-                <li>Sobre</li>
-            </ul>
+            <a class="" href="https://github.com/patrickWarley">
+                <i class="fa-brands iconredesfooter fa-github"></i>
+            </a>
+
+            <a class="" href="#">
+                <i class="fa-brands iconredesfooter fa-linkedin"></i>
+            </a>
+            <a class="" href="#header">
+                Voltar ao inicio
+            </a>
         </div>
     </footer>
     <script type="text/javascript" src="./js/index.js"></script>
