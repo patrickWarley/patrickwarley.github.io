@@ -2,281 +2,289 @@
 
 
 :root {
-    --black: #000000;
+  --black: #000000;
 }
 
 /*reset*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 section {
-    width: 100%;
-    padding: 40px;
-    margin: 0;
-    border: 0;
-    scroll-margin-top: 0;
-    min-height: 100vh;
+  min-width: 100%;
+  padding: 20px;
+  margin: 0;
+  border: 0;
+  scroll-margin-top: 0;
 }
 
-.pageend {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #C0C0C0;
-    min-height: 200px;
-    padding: 50px;
+body {
+  font-family: Antonio !important;
 }
 
-.pageend a {
-    vertical-align: middle;
-    text-decoration: none;
-    color: #000000;
-    font-family: Antonio;
+.text-center {
+  text-align: center;
 }
 
-.pageend li {
-    display: inline;
+.primarySecondary {
+  background-color: black;
+  color: white;
 }
 
-.form {
-    margin-top: 100px;
-    font-family: Antonio;
-    font-size: bigger;
+.secondaryPrimary {
+  background-color: white;
+  color: black;
 }
 
-.submitbutton {
-    padding: 20px;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 5px;
-    align-self: flex-end;
+.min-w-100 {
+  min-width: 100%;
 }
 
-.inputgroup {
-    width: 100%;
+.min-h-100 {
+  height: 100%;
 }
 
-.inputgroup input,
-textarea {
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid white;
-
-    padding: 10px;
-
-    color: white;
-    background-color: black;
-    font-size: larger;
+.centerVertical {
+  justify-content: center;
 }
 
-
-
-.pad20px {
-    padding: 20px;
+.centerHorizontal {
+  align-items: center;
 }
 
-.projectsPreview {
-    background-color: red;
-    border: 1px solid black;
-    display: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.w-100 {
-    width: 100%;
-}
-
-.h-100 {
-    height: 100%;
-}
-
+/*Skills*/
 .card {
-    padding: 20px;
-    margin-right: 5px;
-    margin-top: 10px;
-    width: 100%;
-    float: left;
-    border: solid 1px black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 16px -6px #000000;
+  padding: 20px;
+  margin-right: 5px;
+  margin-top: 10px;
+  width: 100%;
+  float: left;
+  border: solid 1px black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 16px -6px #000000;
 }
 
 .card p {
-    display: flex;
-    font-size: 1.2em;
-    padding: 20px;
+  display: flex;
+  font-size: 1.2em;
+  padding: 20px;
 }
 
 #skillsPainel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .cardimg {
-    display: flex;
-    margin: 20px auto;
-    font-size: 3em;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    background-color: #C0C0C0;
-    box-shadow: 0px 0px 16px -6px #000000;
+  display: flex;
+  margin: 20px auto;
+  font-size: 3em;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #C0C0C0;
+  box-shadow: 0px 0px 16px -6px #000000;
 }
+
 
 /*bigger screens configs*/
 @media(min-width:768px) {
 
-    /*In smaller screens the subtitles are each one on a line*/
-    .subtitle {
-        display: block;
-    }
+  /*In smaller screens the subtitles are each one on a line*/
+  .subtitle {
+    display: block;
+  }
 
-    #skillsPainel {
-        justify-content: center;
-        align-items: center;
-    }
+  .mainTitle {
+    font-size: 5em !important;
+  }
 
-    .card {
-        width: 40%;
-        display: inline;
-    }
-
-    .form {
-        width: 600px;
-    }
-}
-
-/*remember that the elements should have a width property*/
-.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.centerVertical {
+  #skillsPainel {
     justify-content: center;
-}
-
-.centerHorizontal {
     align-items: center;
-}
+  }
 
-/*it's no use centralize a element that has the same size than the parent*/
-.footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    padding: 20px;
-}
-
-.iconredesfooter {
-    padding: 10px;
-    font-size: 2em;
-    cursor: pointer;
-    color: black;
-}
-
-.iconredesfooter:hover {
-    font-size: 2.5em;
-}
-
-.iconredes {
+  .card {
+    width: 40%;
     display: inline;
-    font-size: 2em;
-    padding: 10px;
-    color: #000000;
-    background-color: gold;
-    cursor: pointer;
-    border-radius: 20px;
-}
+  }
 
-.iconredes:hover {
-    background-color: white;
-    color: gold;
-}
+  .form {
+    width: 600px;
+  }
 
-.redesNav {}
-
-.mainTitle {
-    font-size: 9em;
-    font-style: bold;
-    font-family: Antonio;
-}
-
-.mainTitle .tab {
+  .tab {
     margin-left: 0.4em;
+  }
 }
 
-.subtitle {
-    font-size: 1.5em;
-    text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
+/*main section*/
+#main {
+  position: relative;
+  background-image: url("..//images/fundo.png");
+
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
 }
 
-.subtext {
-    margin-top: 20px;
-    font-size: medium;
-}
-
-.onTop {
-    position: relative;
-    z-index: 999;
-}
-
-.subtitle:hover {
-    font-weight: bold;
-    font-size: 2em;
+#header {
+  z-index: 999999;
 }
 
 #main {
-    position: relative;
-    background-image: url("..//images/fundo.png");
-
-    min-height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: white;
+  padding-top: 100px;
 }
 
 #main .welcome {
-    text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
+  text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
-.center {
-    text-align: center;
+.mainTitle {
+  font-size: 15vw;
+  font-style: bold;
+  font-family: Antonio;
 }
 
-.primarySecondary {
-    background-color: black;
-    color: white;
+.subtitle {
+  font-size: 1.5em;
+  text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
-.secondaryPrimary {
-    background-color: white;
-    color: black;
+.subtext {
+  margin-top: 20px;
+  font-size: medium;
 }
 
+.onTop {
+  position: relative;
+  z-index: 999;
+}
+
+.subtitle:hover {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/*Contact section*/
 #contact {}
 
+.form {
+  margin-top: 100px;
+  font-family: Antonio;
+  font-size: bigger;
+}
+
+.submitbutton {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+
+.inputgroup {
+  width: 100%;
+}
+
+.inputgroup input,
+textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid white;
+
+  padding: 10px;
+
+  color: white;
+  background-color: black;
+  font-size: larger;
+}
 
 #hobbiesinterests {}
 
-#summary {}
+#summary {
+  padding-top: 100px;
+}
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px;
+}
+
+.iconredesfooter {
+  padding: 10px;
+  font-size: 2em;
+  cursor: pointer;
+  color: black;
+}
+
+.iconredesfooter:hover {
+  font-size: 2.5em;
+}
+
+.iconredes {
+  display: inline;
+  font-size: 1.5em;
+  padding: 5px;
+  color: #000000;
+  background-color: gold;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.iconredes:hover {
+  background-color: white;
+  color: gold;
+}
+
+.pageend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #C0C0C0;
+  min-height: 200px;
+  padding: 50px;
+}
+
+.pageend a {
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+  font-family: Antonio;
+}
+
+.pageend li {
+  display: inline;
+}
+
+.redesNav {}

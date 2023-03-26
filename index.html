@@ -3,160 +3,175 @@
 
 <head>
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/mainNav.css" />
-    <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/mainNav.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://kit.fontawesome.com/3842b7f66e.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3842b7f66e.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Patrick warley</title>
+  <title>Patrick warley</title>
 </head>
 
 <body>
-    <header id="header" class="header">
-        <a href="#main" class="logo">PW</a>
+  <header id="header" class="header position-fixed top-0">
+    <a href="#main" class="logo fw-bolder">PW</a>
 
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu" />
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
 
-        <nav class="mainNav">
-            <ul class="menu">
-                <li>
-                    <a href="#summary"> Sobre </a>
-                </li>
-                <li>
-                    <a href="#hobbiesinterests" id="hobbiesinterestsLink">Interesses</a>
-                </li>
-                <li>
-                    <a href="#contact">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="main" class="center">
-            <div class="welcome">
-                <span class="mainTitle onTop">Prazer,<br /><span class="tab">Patrick</span></span>
-            </div>
-            </br>
-            <span class="subtitle onTop">Desenvolvedor FullStack.</span>
+    <nav class="mainNav">
+      <ul class="menu">
+        <li>
+          <a href="#summary"> Sobre </a>
+        </li>
+        <li>
+          <a href="#hobbiesinterests" id="hobbiesinterestsLink">Interesses</a>
+        </li>
+        <li>
+          <a href="#contact">Contato</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="main" class="text-center flex-column d-flex align-items-center justify-content-between">
+      <div class="welcome">
+        <p><span class="mainTitle">Prazer,<br /><span class="tab">Patrick</span></span></p>
+        <span class="fs-5">Desenvolvedor FullStack</span>
+      </div>
 
-            <footer class="footer container centerHorizontal">
-                <div class="redesNav">
 
-                    <a class="" href="https://github.com/patrickWarley">
-                        <i class="fa-brands iconredes fa-github"></i>
-                    </a>
+      <footer class="">
+        <div class="redesNav">
 
-                    <a class="" href="#">
-                        <i class="fa-brands iconredes fa-linkedin"></i>
-                    </a>
+          <a class="" href="https://github.com/patrickWarley">
+            <i class="fa-brands iconredes fa-github"></i>
+          </a>
 
-                    <div class="subtext">patrickwarley@gmail.com</div>
-                </div>
-            </footer>
-        </section>
-        <section id="summary" class="primarySecondary container centerVertical centerHorizontal">
-            <div class="reveal ">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h1 class="title1">Seja bem vindo</h1>
-                    <p>
-                        Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
-                    </p>
-                    <p>
-                        O que me atraiu a programação foi a chance de aprender sobre o trabalho e a rotina de diferentes
-                        areas.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="hobbiesinterests" class="secondaryPrimary container">
-            <div class="reveal w-100 h-100">
-                <div id="skillsPainel" class="centerHorizontal">
-                    <div class="card center secondaryPrimary">
+          <a class="" href="https://www.linkedin.com/in/patrick-warley-0b889537/">
+            <i class="fa-brands iconredes fa-linkedin"></i>
+          </a>
 
-                        <div class="cardimg centerHorizontal centerVertical">
-                            <i class="fa-solid fa-network-wired"></i>
-                        </div>
-
-                        <div class="cardtitle">
-                            <h1 class="">Back-End</h1>
-                        </div>
-                        <div class="cardbody">
-                            <p>Minha primeira experiencia com programação Back-End foi com Java, hoje em dia minha
-                                paixão e o javascript.</p>
-                            <div>
-                                <h3>Linguagens e frameworks:</h3>
-                                <p>Java, Javascript, Nodejs, MongoDb, SQL, Moongose</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card center secondaryPrimary">
-
-                        <div class="cardimg centerHorizontal centerVertical">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-
-                        <div class="cardtitle">
-                            <h1 class="">Front-End</h1>
-                        </div>
-                        <div class="cardbody">
-                            <p>Acredito que dominar bem a base, css e html, são essencias para realizar um bom
-                                trabalho com qualquer framework.</p>
-                            <div>
-                                <h3>Linguagens e frameworks:</h3>
-                                <p>HTML, CSS, Javascript, Git, Bootstrap, Tailwind CSS, React</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="primarySecondary container centerVertical centerHorizontal">
-            <div class='reveal'>
-
-                <form action="#">
-                    <div class="form container">
-                        <h1 class="center pad20px">Contato</h1>
-                        <div class="inputgroup pad20px">
-                            <input type="text" placeholder="Nome" id="name" required />
-                        </div>
-
-                        <div class="inputgroup pad20px">
-                            <input type="email" placeholder="Email" id="emai" required />
-                        </div>
-                        <div class="inputgroup pad20px">
-                            <textarea name="message" placeholder="Mensagem" id="message" cols="30" rows="10"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="submitbutton">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer class="pageend">
-        <div class="redesSocias">
-            <a class="" href="https://github.com/patrickWarley">
-                <i class="fa-brands iconredesfooter fa-github"></i>
-            </a>
-
-            <a class="" href="#">
-                <i class="fa-brands iconredesfooter fa-linkedin"></i>
-            </a>
-            <a class="" href="#header">
-                Voltar ao inicio
-            </a>
+          <div class="subtext">patrickwarley@gmail.com</div>
         </div>
-    </footer>
-    <script type="text/javascript" src="./js/index.js"></script>
+      </footer>
+    </section>
+    <section id="summary" class="primarySecondary text-center container-fluid min-vh-100">
+      <div class="reveal pb-5">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h1 class="title1 pb-5">Seja bem vindo</h1>
+          <p>
+            Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
+          </p>
+          <p>
+            Adoro aprender e me desafiar.
+          </p>
+        </div>
+      </div>
+      <div class="reveal row text-center">
+        <p>Skills</p>
+      </div>
+      <div class="reveal container-fluid d-flex justify-content-around mt-5 py-5">
+        <div>
+          <span class="showSkill rounded-circle bg-white p-3 text-dark">Front-End</span>
+        </div>
+        <div>
+          <span class="showSkill rounded-circle bg-white p-3 text-dark">Back-End</span>
+        </div>
+      </div>
+
+    </section>
+    <section id="hobbiesinterests" class="secondaryPrimary container-fluid min-vw-100 min-vh-100">
+      <div class="reveal w-100 h-100">
+        <div id="skillsPainel" class="d-flex ">
+
+          <div class="card text-center secondaryPrimary m-3">
+            <div class="cardimg d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+
+            <div class="cardtitle">
+              <h1 class="">Back-End</h1>
+            </div>
+            <div class="cardbody">
+              <p>Minha primeira experiencia com programação Back-End foi com Java, atualmente trabalho com
+                Javascript/NodeJs.</p>
+              <div>
+                <h3>Linguagens e frameworks:</h3>
+                <p class="text-center">Java, Javascript, Nodejs, MongoDb, SQL, Moongose</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card text-center secondaryPrimary">
+
+            <div class="cardimg d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="cardtitle">
+              <h1 class="">Front-End</h1>
+            </div>
+            <div class="cardbody">
+              <p>Acredito que dominar bem a base, css e html, são essencias para realizar um bom
+                trabalho com qualquer framework.</p>
+              <div>
+                <h3>Linguagens e frameworks:</h3>
+                <p>HTML, CSS, Javascript, Git, Bootstrap, Tailwind CSS, React</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="primarySecondary container centerVertical centerHorizontal">
+      <div class='reveal'>
+
+        <form action="#">
+          <div class="form container">
+            <h1 class="center pad20px">Contato</h1>
+            <div class="inputgroup pad20px">
+              <input type="text" placeholder="Nome" id="name" required />
+            </div>
+
+            <div class="inputgroup pad20px">
+              <input type="email" placeholder="Email" id="emai" required />
+            </div>
+            <div class="inputgroup pad20px">
+              <textarea name="message" placeholder="Mensagem" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="submitbutton">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="pageend">
+    <div class="redesSocias">
+      <a class="" href="https://github.com/patrickWarley">
+        <i class="fa-brands iconredesfooter fa-github"></i>
+      </a>
+
+      <a class="" href="#">
+        <i class="fa-brands iconredesfooter fa-linkedin"></i>
+      </a>
+      <a class="" href="#header">
+        Voltar ao inicio
+      </a>
+    </div>
+  </footer>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
