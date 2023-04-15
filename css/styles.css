@@ -3,6 +3,8 @@
 
 :root {
   --black: #000000;
+  --fs-sm: 14px;
+  --fs-md: 16px;
 }
 
 /*reset*/
@@ -23,18 +25,19 @@ ul {
 
 section {
   min-width: 100%;
-  padding: 20px;
   margin: 0;
-  border: 0;
   scroll-margin-top: 0;
+}
+
+.p-menuleft{
+  padding-left: 100px;
+}
+.p-menuright{
+  padding-right: 100px;
 }
 
 body {
   font-family: Antonio !important;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .primarySecondary {
@@ -47,26 +50,8 @@ body {
   color: black;
 }
 
-.min-w-100 {
-  min-width: 100%;
-}
-
-.min-h-100 {
-  height: 100%;
-}
-
-.centerVertical {
-  justify-content: center;
-}
-
-.centerHorizontal {
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.z-index-top{
+  z-index: 9999;
 }
 
 /*Skills*/
@@ -87,12 +72,6 @@ body {
   padding: 20px;
 }
 
-#skillsPainel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 .cardimg {
   display: flex;
   margin: 20px auto;
@@ -107,11 +86,6 @@ body {
 
 /*bigger screens configs*/
 @media(min-width:768px) {
-
-  /*In smaller screens the subtitles are each one on a line*/
-  .subtitle {
-    display: block;
-  }
 
   .mainTitle {
     font-size: 5em !important;
@@ -137,55 +111,62 @@ body {
 }
 
 /*main section*/
-#main {
-  position: relative;
+#hero-background {
   background-image: url("..//images/fundo.png");
 
-  min-height: 600px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: blur(3px);
+  color: white;
+  z-index: 0;
+  transform: scale(1.1);
+  min-width: 110vw;
+}
 
+.hero{
+  background-color: transparent;
+}
+
+#hero-content{
+  padding-top: 100px;
+  min-height: 100vh;
   color: white;
 }
 
-#header {
-  z-index: 999999;
-}
-
-#main {
-  padding-top: 100px;
-}
-
-#main .welcome {
+#hero-content .content{
   text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
-.mainTitle {
-  font-size: 15vw;
-  font-style: bold;
-  font-family: Antonio;
+#hero-content .content p{
+  font-size: clamp(var(--fs-sm), 5vw, var(--fs-md));
 }
 
-.subtitle {
-  font-size: 1.5em;
+#hero-content .content h1{
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+#hero-content .content h2{
+  font-size: clamp(20px, 8vw, 40px);
+}
+
+.call-to-action{
+  display: inline-block;
+  background-color: transparent;
+  color: yellow;
   text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
+  cursor: pointer;
+
+  border: 2px solid black;
+
+  transition: all 1s;
 }
 
-.subtext {
-  margin-top: 20px;
-  font-size: medium;
-}
-
-.onTop {
-  position: relative;
-  z-index: 999;
-}
-
-.subtitle:hover {
-  font-weight: bold;
-  font-size: 2em;
+.call-to-action:hover{
+  background-color: rgb(0, 0, 0, 0.3);
+  color: yellow;
 }
 
 /*Contact section*/
@@ -251,18 +232,18 @@ textarea {
 }
 
 .iconredes {
-  display: inline;
+  display: inline-block;
   font-size: 1.5em;
   padding: 5px;
-  color: #000000;
-  background-color: gold;
+  color: gold;
+  background-color:transparent;
   cursor: pointer;
   border-radius: 50%;
+  transition: all 0.5s;
 }
 
 .iconredes:hover {
-  background-color: white;
-  color: gold;
+  transform: scale(1.3);
 }
 
 .pageend {

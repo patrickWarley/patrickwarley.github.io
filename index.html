@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header id="header" class="header position-fixed top-0">
+  <header id="header" class="header position-fixed top-0 z-index-top">
     <a href="#main" class="logo fw-bolder">PW</a>
 
     <!-- Hamburger icon -->
@@ -43,29 +43,35 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section id="main" class="text-center flex-column d-flex align-items-center justify-content-between">
-      <div class="welcome">
-        <p><span class="mainTitle">Prazer,<br /><span class="tab">Patrick</span></span></p>
-        <span class="fs-5">Desenvolvedor FullStack</span>
+
+  <nav class="d-flex flex-column p-4 position-fixed bottom-0 z-index-top">
+    <div class="redesNav">
+      <div class="p-3">
+        <a class="" href="https://github.com/patrickWarley">
+          <i class="fa-brands iconredes fa-github"></i>
+        </a>
       </div>
-
-
-      <footer class="">
-        <div class="redesNav">
-
-          <a class="" href="https://github.com/patrickWarley">
-            <i class="fa-brands iconredes fa-github"></i>
-          </a>
-
-          <a class="" href="https://www.linkedin.com/in/patrick-warley-0b889537/">
-            <i class="fa-brands iconredes fa-linkedin"></i>
-          </a>
-
-          <div class="subtext">patrickwarley@gmail.com</div>
-        </div>
-      </footer>
+      <div class="p-3">
+        <a class="" href="https://www.linkedin.com/in/patrick-warley-0b889537/">
+          <i class="fa-brands iconredes fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="min-vh-100 min-vw-100">
+    <section class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden">
+      <div id="hero-background" class="position-absolute"></div>
+      <div id="hero-content" class="mt-5 position-absolute p-menuleft  p-menuright">
+        <div class="content ms-5">
+          <p>Prazer, me chamo</p>
+          <h1>Patrick Warley, </h1>
+          <h2>Desenvolvedor Web Fullstack.</h2>
+          <a class="px-4 py-3 mt-5 call-to-action" href="#contact">Fale comigo!</a>
+        </div> 
+      </div>
     </section>
+
     <section id="summary" class="primarySecondary text-center container-fluid min-vh-100">
       <div class="reveal pb-5">
         <div>
@@ -157,7 +163,8 @@
       </div>
     </section>
   </main>
-  <footer class="pageend">
+
+  <footer>
     <div class="redesSocias">
       <a class="" href="https://github.com/patrickWarley">
         <i class="fa-brands iconredesfooter fa-github"></i>
@@ -171,6 +178,7 @@
       </a>
     </div>
   </footer>
+  
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
