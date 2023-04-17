@@ -111,23 +111,83 @@ body {
 }
 
 /*main section*/
+
+.icon-group{
+  z-index: 0;
+  width: 100vw;
+  height: 300px;
+  animation: scrolling-left 20s infinite linear;
+}
+
+.icon-group2{
+  z-index: 0;
+  width: 100vw;
+  height: 300px;
+  animation: scrolling-right 20s infinite linear;
+}
+
+.icon-group2 i,
+.icon-group i{
+  font-size: 100px;
+  align-self:center;
+  color:white;
+  margin: 0;
+  border:0;
+}
+
+@keyframes scrolling-left{
+  from{
+    transform:translateX(100%);
+  }
+  to{
+    transform:translateX(-100%);
+  }
+}
+
+
+@keyframes scrolling-right{
+  from{
+    transform:translateX(-100%);
+  }
+  to{
+    transform:translateX(100%);
+  }
+}
+
 #hero-background {
   background-image: url("..//images/fundo.png");
 
   min-height: 100vh;
+  width: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(3px);
+  filter: blur(1px);
   color: white;
   z-index: 0;
   transform: scale(1.1);
-  min-width: 110vw;
+
+  transition: min-height 0.5s;
+}
+
+#hero-background:has(+ #hero-content .content h2:hover) {
+  min-height: 200px;
+  --mask:
+    radial-gradient(25.61px at 50% 36.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
+    radial-gradient(25.61px at 50% -16px,#0000 99%,#000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
+    radial-gradient(25.61px at 50% calc(100% - 36.00px),#000 99%,#0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
+    radial-gradient(25.61px at 50% calc(100% + 16.00px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+h2:hover + .call-to-action{
+  visibility: hidden;
 }
 
 .hero{
-  background-color: transparent;
+  background-color: black;
 }
 
 #hero-content{
@@ -161,7 +221,7 @@ body {
 
   border: 2px solid black;
 
-  transition: all 1s;
+  transition: background 1s;
 }
 
 .call-to-action:hover{
@@ -210,6 +270,9 @@ textarea {
   padding-top: 100px;
 }
 
+.summary{
+  margin-left: 100px;
+}
 
 /* Footer */
 .footer {

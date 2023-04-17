@@ -14,6 +14,7 @@
   <script src="https://kit.fontawesome.com/3842b7f66e.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
   <title>Patrick warley</title>
 </head>
@@ -44,7 +45,7 @@
     </nav>
   </header>
 
-  <nav class="d-flex flex-column p-4 position-fixed bottom-0 z-index-top">
+  <nav class="d-flex flex-column p-4 position-fixed top-50 z-index-top">
     <div class="redesNav">
       <div class="p-3">
         <a class="" href="https://github.com/patrickWarley">
@@ -60,9 +61,29 @@
   </nav>
   
   <main class="min-vh-100 min-vw-100">
-    <section class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden">
+    <section aria-hidden="true" class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden justify-content-center">
+      <div class="tecnologies d-flex position-absolute top-0">
+        <div class="icon-group d-flex justify-content-around">
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-java-plain-wordmark"></i>
+          <i class="devicon-git-plain-wordmark"></i>
+          <i class="devicon-ruby-plain-wordmark"></i>
+          <i class="devicon-apache-line-wordmark"></i>
+          <i class="devicon-mongodb-plain-wordmark"></i>
+        </div>
+      </div>
+      <div class="tecnologies d-flex position-absolute bottom-0">
+        <div class="icon-group2 d-flex justify-content-around">
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-bootstrap-plain-wordmark"></i>
+          <i class="devicon-react-original-wordmark"></i>
+          <i class="devicon-tailwindcss-original-wordmark"></i>
+          <i class="devicon-html5-plain-wordmark"></i>
+          <i class="devicon-css3-plain-wordmark"></i>
+        </div>
+      </div>
       <div id="hero-background" class="position-absolute"></div>
-      <div id="hero-content" class="mt-5 position-absolute p-menuleft  p-menuright">
+      <div id="hero-content" class="align-items-center d-flex position-absolute p-menuleft  p-menuright">
         <div class="content ms-5">
           <p>Prazer, me chamo</p>
           <h1>Patrick Warley, </h1>
@@ -72,31 +93,32 @@
       </div>
     </section>
 
-    <section id="summary" class="primarySecondary text-center container-fluid min-vh-100">
-      <div class="reveal pb-5">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h1 class="title1 pb-5">Seja bem vindo</h1>
-          <p>
-            Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
-          </p>
-          <p>
-            Adoro aprender e me desafiar.
-          </p>
+    <section id="summary" class="primarySecondary min-vh-100">
+      <div class="summary p-menuleft p-menuright">
+        <div class="reveal pb-5">
+          <div>
+            <h1 class="title1 pb-5"><i class="fa-solid fa-code"></i> Seja bem vindo</h1>
+            <p>
+              Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
+            </p>
+            <p>
+              Adoro aprender e me desafiar.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="reveal row text-center">
-        <p>Skills</p>
-      </div>
-      <div class="reveal container-fluid d-flex justify-content-around mt-5 py-5">
-        <div>
-          <span class="showSkill rounded-circle bg-white p-3 text-dark">Front-End</span>
+        <div class="reveal">
+          <p>Tecnologias com as quais estou trabalhando atualmente:</p>
+          <ul>
+            <li>React</li>
+            <li>NodeJs</li>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+            <li>MySql</li>
+            <li>PostgreeSql</li>
+            <li>NextJs</li>
+          </ul>
         </div>
-        <div>
-          <span class="showSkill rounded-circle bg-white p-3 text-dark">Back-End</span>
-        </div>
-      </div>
-
+      </div>      
     </section>
     <section id="hobbiesinterests" class="secondaryPrimary container-fluid min-vw-100 min-vh-100">
       <div class="reveal w-100 h-100">
