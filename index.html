@@ -59,9 +59,10 @@
       </div>
     </div>
   </nav>
-  
+
   <main class="min-vh-100 min-vw-100">
-    <section aria-hidden="true" class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden justify-content-center">
+    <section aria-hidden="true"
+      class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden justify-content-center">
       <div class="tecnologies d-flex position-absolute top-0">
         <div class="icon-group d-flex justify-content-around">
           <i class="devicon-nodejs-plain"></i>
@@ -89,118 +90,104 @@
           <h1>Patrick Warley, </h1>
           <h2>Desenvolvedor Web Fullstack.</h2>
           <a class="px-4 py-3 mt-5 call-to-action" href="#contact">Fale comigo!</a>
-        </div> 
+        </div>
       </div>
     </section>
 
-    <section id="summary" class="primarySecondary min-vh-100">
+    <section id="summary" class=" primarySecondary min-vh-100">
       <div class="summary p-menuleft p-menuright">
         <div class="reveal pb-5">
           <div>
             <h1 class="title1 pb-5"><i class="fa-solid fa-code"></i> Seja bem vindo</h1>
             <p>
-              Meu nome e patrick, eu sou um desenvolvedor FullStack com especialização em React/Nodejs.
+              Meu nome e patrick, e eu acredito que aprender seja a melhor coisa do mundo.
             </p>
             <p>
-              Adoro aprender e me desafiar.
+              Meu interesse por programação nasceu a alguns anos quando eu vi que programar exige que você se mantenha
+              sempre aprendendendo.
+              E esse aprendizado engloba não so as tecnologias que são utilizadas no dia-a-dia, que estão sempre
+              mudando, como tambem a realidade das pessoas que vão utilizar as minhas aplicações.
             </p>
           </div>
         </div>
         <div class="reveal">
           <p>Tecnologias com as quais estou trabalhando atualmente:</p>
-          <ul>
-            <li>React</li>
-            <li>NodeJs</li>
-            <li>Tailwind</li>
-            <li>Bootstrap</li>
-            <li>MySql</li>
-            <li>PostgreeSql</li>
-            <li>NextJs</li>
+          <ul class="row w-50">
+            <div class="col">
+              <li class="type"><span class="text-gold">></span> NodeJs</li>
+              <li><span class="text-gold">></span> React</li>
+              <li><span class="text-gold">></span> Tailwind</li>
+              <li><span class="text-gold">></span> Javascript</li>
+            </div>
+            <div class="col">
+              <li><span class="text-gold">></span> MySql</li>
+              <li><span class="text-gold">></span> PostgreeSql</li>
+              <li><span class="text-gold">></span> NextJs</li>
+              <li><span class="text-gold">></span> Bootstrap</li>
+            </div>
           </ul>
-        </div>
-      </div>      
-    </section>
-    <section id="hobbiesinterests" class="secondaryPrimary container-fluid min-vw-100 min-vh-100">
-      <div class="reveal w-100 h-100">
-        <div id="skillsPainel" class="d-flex ">
-
-          <div class="card text-center secondaryPrimary m-3">
-            <div class="cardimg d-flex align-items-center justify-content-center">
-              <i class="fa-solid fa-network-wired"></i>
-            </div>
-
-            <div class="cardtitle">
-              <h1 class="">Back-End</h1>
-            </div>
-            <div class="cardbody">
-              <p>Minha primeira experiencia com programação Back-End foi com Java, atualmente trabalho com
-                Javascript/NodeJs.</p>
-              <div>
-                <h3>Linguagens e frameworks:</h3>
-                <p class="text-center">Java, Javascript, Nodejs, MongoDb, SQL, Moongose</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card text-center secondaryPrimary">
-
-            <div class="cardimg d-flex align-items-center justify-content-center">
-              <i class="fa-solid fa-code"></i>
-            </div>
-
-            <div class="cardtitle">
-              <h1 class="">Front-End</h1>
-            </div>
-            <div class="cardbody">
-              <p>Acredito que dominar bem a base, css e html, são essencias para realizar um bom
-                trabalho com qualquer framework.</p>
-              <div>
-                <h3>Linguagens e frameworks:</h3>
-                <p>HTML, CSS, Javascript, Git, Bootstrap, Tailwind CSS, React</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="primarySecondary container centerVertical centerHorizontal">
-      <div class='reveal'>
+    <section id="projects" class="primarySecondary min-vh-100 p-menuleft">
+      <div class="p-5 project d-flex justify-content-center align-items-center">
+        <div class="p-5 mt-5  w-50 project-descr">
+          <h5><a href="https://patrickwarley.github.io/barbearia/"> Barbearia Corte Certo </a></h5>
+          <p>
+            Esse foi o primeiro site criado em grupo durante meu curso de Desenvolvimento fullstack.
+            O desafio era desenvolver o site de um comecio local, e o meu grupo escolheu a criação do site para uma
+            Barbearia.
 
-        <form action="#">
-          <div class="form container">
-            <h1 class="center pad20px">Contato</h1>
-            <div class="inputgroup pad20px">
-              <input type="text" placeholder="Nome" id="name" required />
-            </div>
-
-            <div class="inputgroup pad20px">
-              <input type="email" placeholder="Email" id="emai" required />
-            </div>
-            <div class="inputgroup pad20px">
-              <textarea name="message" placeholder="Mensagem" id="message" cols="30" rows="10" required></textarea>
-            </div>
-            <button type="submit" class="submitbutton">Enviar</button>
+          <ul class="tecnlogies-projects">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+          </ul>
+          </p>
+        </div>
+        <div class="w-75 img-project d-flex justify-content-around">
+          <div class="col project-click">
+            <img class="" src="./images/corte-certo1.png" alt="">
           </div>
+
+          <div class="col project-click">
+            <img class="" src="./images/corte-certo2.png" alt="">
+          </div>
+
+          <div class="col project-click expand">
+            <img class="" src="./images/corte-certo3.png" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section id="contact" class="primarySecondary min-vh-100">
+      <div class='reveal p-menuleft p-menuright'>
+        <form action="#" class="w-100 d-flex align-items-center flex-column">
+          <h1 class="">Contato</h1>
+
+          <div class="w-75">
+            <input class="mx-auto m-2 form-control w-50" type="text" placeholder="Nome" id="name" required />
+          </div>
+
+          <div class="w-75">
+            <input class="mx-auto m-2 w-50 form-control" type="email" placeholder="Email" id="emai" required />
+          </div>
+          <div class="w-75">
+            <textarea class="w-50 mx-auto m-2 form-control" name="message" placeholder="Mensagem" id="message" cols="30"
+              rows="10" required></textarea>
+          </div>
+          <button type="submit" class="px-4 py-3 mt-5 submitbutton">Enviar</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="redesSocias">
-      <a class="" href="https://github.com/patrickWarley">
-        <i class="fa-brands iconredesfooter fa-github"></i>
-      </a>
-
-      <a class="" href="#">
-        <i class="fa-brands iconredesfooter fa-linkedin"></i>
-      </a>
-      <a class="" href="#header">
-        Voltar ao inicio
-      </a>
-    </div>
+  <footer class="primarySecondary d-flex flex-column p-5 align-items-center">
+    <a href="https://github.com/patrickWarley/patrickwarley.github.io">Desenvolvido por Patrick Warley</a>
   </footer>
-  
+
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
 

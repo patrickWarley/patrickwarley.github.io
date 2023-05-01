@@ -33,4 +33,33 @@ function setIntersectionObserver() {
   }
 }
 
-setIntersectionObserver();
+// project animations
+
+function setExpand(evt) {
+  const parent = evt.target.parentElement.parentElement;
+
+  for (let element of parent.children) {
+    let classList = element.classList;
+
+    for (let className of classList)
+      if (className === "expand") classList.toggle("expand");
+  }
+
+  evt.target.parentElement.classList.toggle('expand');
+  console.log(evt.target.parentElement)
+}
+
+function getProjectImages() {
+  var images = document.querySelectorAll('.project-click');
+
+  for (let image of images) image.addEventListener('click', setExpand);
+}
+
+function init() {
+
+  setIntersectionObserver();
+  getProjectImages();
+}
+
+
+init();

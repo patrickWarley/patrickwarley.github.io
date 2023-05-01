@@ -1,12 +1,12 @@
 .reveal {
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 2s all ease;
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
 /* all elements with the class reveal will be shown when the class active is added*/
 .reveal.active {
-    transform: translateY(0);
-    opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }

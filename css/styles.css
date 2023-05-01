@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Arvo&display=swap');
 
 
 :root {
   --black: #000000;
   --fs-sm: 14px;
   --fs-md: 16px;
+  --gold: #ffd700;
+  --shadow-color: #000000;
+  --text: #e4faff;
+  --gray: #666666
 }
 
 /*reset*/
@@ -17,10 +21,19 @@
 
 a {
   text-decoration: none !important;
+  color: white !important;
+}
+
+a:hover {
+  color: var(--gold) !important;
 }
 
 ul {
   list-style: none;
+}
+
+.text-gold {
+  color: var(--gold);
 }
 
 section {
@@ -29,15 +42,26 @@ section {
   scroll-margin-top: 0;
 }
 
-.p-menuleft{
+.p-menuleft {
   padding-left: 100px;
 }
-.p-menuright{
+
+.p-menuright {
   padding-right: 100px;
 }
 
 body {
-  font-family: Antonio !important;
+  font-family: 'Antonio', sans-serif !important;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  font-family: 'Arvo', serif !important;
+  color: var(--text);
 }
 
 .primarySecondary {
@@ -50,7 +74,7 @@ body {
   color: black;
 }
 
-.z-index-top{
+.z-index-top {
   z-index: 9999;
 }
 
@@ -61,9 +85,9 @@ body {
   margin-top: 10px;
   width: 100%;
   float: left;
-  border: solid 1px black;
+  border: solid 1px var(--black);
   border-radius: 10px;
-  box-shadow: 0px 0px 16px -6px #000000;
+  box-shadow: 0px 0px 16px -6px var(--shadow-color);
 }
 
 .card p {
@@ -80,7 +104,7 @@ body {
   height: 100px;
   border-radius: 100px;
   background-color: #C0C0C0;
-  box-shadow: 0px 0px 16px -6px #000000;
+  box-shadow: 0px 0px 16px -6px var(--shadow-color);
 }
 
 
@@ -91,35 +115,27 @@ body {
     font-size: 5em !important;
   }
 
-  #skillsPainel {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card {
-    width: 40%;
-    display: inline;
-  }
-
-  .form {
-    width: 600px;
-  }
-
   .tab {
     margin-left: 0.4em;
   }
+
+  #summary {
+    padding-left: 100px;
+  }
+
+  #contact {}
 }
 
 /*main section*/
 
-.icon-group{
+.icon-group {
   z-index: 0;
   width: 100vw;
   height: 300px;
   animation: scrolling-left 20s infinite linear;
 }
 
-.icon-group2{
+.icon-group2 {
   z-index: 0;
   width: 100vw;
   height: 300px;
@@ -127,30 +143,32 @@ body {
 }
 
 .icon-group2 i,
-.icon-group i{
+.icon-group i {
   font-size: 100px;
-  align-self:center;
-  color:white;
+  align-self: center;
+  color: white;
   margin: 0;
-  border:0;
+  border: 0;
 }
 
-@keyframes scrolling-left{
-  from{
-    transform:translateX(100%);
+@keyframes scrolling-left {
+  from {
+    transform: translateX(100%);
   }
-  to{
-    transform:translateX(-100%);
+
+  to {
+    transform: translateX(-100%);
   }
 }
 
 
-@keyframes scrolling-right{
-  from{
-    transform:translateX(-100%);
+@keyframes scrolling-right {
+  from {
+    transform: translateX(-100%);
   }
-  to{
-    transform:translateX(100%);
+
+  to {
+    transform: translateX(100%);
   }
 }
 
@@ -174,69 +192,64 @@ body {
 #hero-background:has(+ #hero-content .content h2:hover) {
   min-height: 200px;
   --mask:
-    radial-gradient(25.61px at 50% 36.00px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
-    radial-gradient(25.61px at 50% -16px,#0000 99%,#000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
-    radial-gradient(25.61px at 50% calc(100% - 36.00px),#000 99%,#0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
-    radial-gradient(25.61px at 50% calc(100% + 16.00px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+    radial-gradient(25.61px at 50% 36.00px, #000 99%, #0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
+    radial-gradient(25.61px at 50% -16px, #0000 99%, #000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
+    radial-gradient(25.61px at 50% calc(100% - 36.00px), #000 99%, #0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
+    radial-gradient(25.61px at 50% calc(100% + 16.00px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
 
-h2:hover + .call-to-action{
+h2:hover+.call-to-action {
   visibility: hidden;
 }
 
-.hero{
+.hero {
   background-color: black;
 }
 
-#hero-content{
+#hero-content {
   padding-top: 100px;
   min-height: 100vh;
   color: white;
 }
 
-#hero-content .content{
+#hero-content .content {
   text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
 }
 
-#hero-content .content p{
+#hero-content .content p {
   font-size: clamp(var(--fs-sm), 5vw, var(--fs-md));
 }
 
-#hero-content .content h1{
+#hero-content .content h1 {
   font-size: clamp(40px, 8vw, 80px);
 }
 
-#hero-content .content h2{
+#hero-content .content h2 {
   font-size: clamp(20px, 8vw, 40px);
 }
 
-.call-to-action{
+.call-to-action {
   display: inline-block;
   background-color: transparent;
-  color: yellow;
+  color: var(--gold);
   text-shadow: -6px 2px 8px rgba(0, 0, 0, 1);
   cursor: pointer;
 
   border: 2px solid black;
 
-  transition: background 1s;
+  transition: background-color 1s;
 }
 
-.call-to-action:hover{
+.call-to-action:hover {
   background-color: rgb(0, 0, 0, 0.3);
-  color: yellow;
+  color: var(--gold);
 }
 
 /*Contact section*/
 #contact {}
 
-.form {
-  margin-top: 100px;
-  font-family: Antonio;
-  font-size: bigger;
-}
 
 .submitbutton {
   padding: 20px;
@@ -244,34 +257,52 @@ h2:hover + .call-to-action{
   background-color: black;
   border: 1px solid white;
   border-radius: 5px;
-  align-self: flex-end;
 }
 
-.inputgroup {
-  width: 100%;
+.submitbutton:hover {
+  color: var(--gold);
 }
-
-.inputgroup input,
-textarea {
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid white;
-
-  padding: 10px;
-
-  color: white;
-  background-color: black;
-  font-size: larger;
-}
-
-#hobbiesinterests {}
 
 #summary {
   padding-top: 100px;
 }
 
-.summary{
-  margin-left: 100px;
+/*Projets*/
+.img-project {
+  min-width: 500px;
+  min-height: 300px;
+  margin-left: -50px;
+}
+
+.img-project img {
+  min-width: 250px;
+  width: 100%;
+  height: 300px;
+}
+
+.img-project .col {
+  max-width: 10% !important;
+  overflow: hidden;
+  margin: 3px;
+  border-radius: 10px;
+  transition: max-width 1s ease-in-out;
+  filter: grayscale();
+}
+
+.img-project .col:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.img-project .expand {
+  max-width: 80% !important;
+  filter: none;
+}
+
+
+.project-descr {
+  background-color: var(--gray);
+  color: var(--gold);
 }
 
 /* Footer */
@@ -298,8 +329,8 @@ textarea {
   display: inline-block;
   font-size: 1.5em;
   padding: 5px;
-  color: gold;
-  background-color:transparent;
+  color: var(--gold);
+  background-color: transparent;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.5s;
@@ -330,5 +361,3 @@ textarea {
 .pageend li {
   display: inline;
 }
-
-.redesNav {}
