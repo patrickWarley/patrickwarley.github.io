@@ -265,19 +265,25 @@ h2:hover+.call-to-action {
 
 #summary {
   padding-top: 100px;
+
 }
 
 /*Projets*/
+.project {}
+
 .img-project {
   min-width: 500px;
   min-height: 300px;
   margin-left: -50px;
+  overflow: hidden;
 }
 
 .img-project img {
   min-width: 250px;
   width: 100%;
   height: 300px;
+  transition: all ease-in-out !important;
+  filter: grayscale();
 }
 
 .img-project .col {
@@ -286,17 +292,15 @@ h2:hover+.call-to-action {
   margin: 3px;
   border-radius: 10px;
   transition: max-width 1s ease-in-out;
-  filter: grayscale();
 }
 
-.img-project .col:hover {
+.img-project img:hover {
   filter: none;
   cursor: pointer;
 }
 
 .img-project .expand {
   max-width: 80% !important;
-  filter: none;
 }
 
 
@@ -304,6 +308,30 @@ h2:hover+.call-to-action {
   background-color: var(--gray);
   color: var(--gold);
 }
+
+.img-project .reveal {
+  opacity: 0 !important;
+  transition: all 1s ease;
+  transform: translateX(100px) !important;
+}
+
+.img-project .active {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.img-project .active:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.img-project .active:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.img-project .active:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
 
 /* Footer */
 .footer {
