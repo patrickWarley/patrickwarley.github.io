@@ -10,3 +10,11 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+.active .icon-group {
+  animation: scrolling-left 20s infinite linear !important;
+}
+
+.active .icon-group2 {
+  animation: scrolling-right 20s infinite linear !important;
+}

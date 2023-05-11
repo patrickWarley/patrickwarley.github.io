@@ -4,11 +4,12 @@
 
 function reveal(entries, observer) {
   entries.forEach(entry => {
-    if (entry.isIntersecting)
-      return entry.target.classList.add('active');
-    //if I do return like the one below
-    //the animation will reset
-    //return entry.target.classList.remove('active');
+    if (entry.isIntersecting) return entry.target.classList.add('active');
+    else {
+      //I wanna reset the animation on the icon-group
+      if (entry.target.classList.contains("tecnologies"))
+        return entry.target.classList.remove('active');
+    }
   });
 }
 
@@ -26,7 +27,7 @@ function setIntersectionObserver() {
 
   let observer = new IntersectionObserver(reveal, options);
 
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll('.reveal, .tecnologies');
 
   for (let elem of reveals) {
     observer.observe(elem)

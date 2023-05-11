@@ -132,14 +132,12 @@ p {
   z-index: 0;
   width: 100vw;
   height: 300px;
-  animation: scrolling-left 20s infinite linear;
 }
 
 .icon-group2 {
   z-index: 0;
   width: 100vw;
   height: 300px;
-  animation: scrolling-right 20s infinite linear;
 }
 
 .icon-group2 i,
@@ -274,8 +272,15 @@ h2:hover+.call-to-action {
 .img-project {
   min-width: 500px;
   min-height: 300px;
-  margin-left: -50px;
   overflow: hidden;
+}
+
+.img-project-left {
+  margin-left: -50px;
+}
+
+.img-project-right {
+  margin-right: -50px;
 }
 
 .img-project img {
