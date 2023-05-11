@@ -20,6 +20,14 @@
 </head>
 
 <body>
+
+  <div class="d-flex align-items-center justify-content-center loading min-vh-100 min-vw-100 p-5 position-fixed">
+    <div class="fs-1 loading-icon d-flex flex-column align-items-center">
+      <span class="d-inline-block go-left">Loading </span>
+      <div class="d-inline-block dot dot-pulse"></div>
+    </div>
+  </div>
+
   <header id="header" class="header position-fixed top-0 z-index-top">
     <a href="#main" class="logo fw-bolder">PW</a>
 
@@ -45,22 +53,24 @@
     </nav>
   </header>
 
-  <nav class="d-flex flex-column p-4 position-fixed top-50 z-index-top">
-    <div class="redesNav">
-      <div class="p-3">
-        <a class="" href="https://github.com/patrickWarley" target="_blank">
-          <i class="fa-brands iconredes fa-github"></i>
-        </a>
+  <aside>
+    <nav class="d-flex flex-column p-4 position-fixed top-50 z-index-top">
+      <div class="redesNav">
+        <div class="p-3">
+          <a class="" href="https://github.com/patrickWarley" target="_blank">
+            <i class="fa-brands iconredes fa-github"></i>
+          </a>
+        </div>
+        <div class="p-3">
+          <a class="" href="https://www.linkedin.com/in/patrick-warley-0b889537/" target="_blank">
+            <i class="fa-brands iconredes fa-linkedin"></i>
+          </a>
+        </div>
       </div>
-      <div class="p-3">
-        <a class="" href="https://www.linkedin.com/in/patrick-warley-0b889537/" target="_blank">
-          <i class="fa-brands iconredes fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </aside>
 
-  <main class="min-vh-100 min-vw-100">
+  <main class="min-vh-100 min-vw-100 overflow-hidden">
     <section aria-hidden="true"
       class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden justify-content-center">
       <div class="tecnologies d-flex position-absolute top-0">
@@ -84,7 +94,7 @@
         </div>
       </div>
       <div id="hero-background" class="position-absolute"></div>
-      <div id="hero-content" class="align-items-center d-flex position-absolute p-menuleft  p-menuright">
+      <div id="hero-content" class="align-items-center d-flex position-absolute p-menuleft p-menuright">
         <div class="content ms-5">
           <p>Prazer, me chamo</p>
           <h1>Patrick Warley, </h1>
@@ -152,7 +162,7 @@
         </div>
         <div class="w-75 img-project img-project-left d-flex justify-content-around reveal">
           <div class="col project-click reveal">
-            <img class="" src="./images/cortecerto/corte-certo1.png" alt="Home Page da pagina barbearia corte certo">
+            <img class="" src="./images/cortecerto/corte-certo3.png" alt="Home Page da pagina barbearia corte certo">
           </div>
 
           <div class="col project-click reveal">
@@ -161,7 +171,7 @@
           </div>
 
           <div class="col project-click reveal expand">
-            <img class="" src="./images/cortecerto/corte-certo3.png"
+            <img class="" src="./images/cortecerto/corte-certo1.png"
               alt="Imagem demonstrativa da pargina baerbearia corte certo">
           </div>
         </div>
@@ -194,7 +204,7 @@
         </div>
         <div class="w-50 img-project img-project-right d-flex justify-content-around reveal">
           <div class="col project-click reveal">
-            <img class="" src="./images/pubdowesley/pubdowesley1.png" alt="Home Page da pagina pub do wesley">
+            <img class="" src="./images/pubdowesley/pubdowesley3.png" alt="Home Page da pagina pub do wesley">
           </div>
 
           <div class="col project-click reveal">
@@ -203,7 +213,7 @@
           </div>
 
           <div class="col project-click reveal expand">
-            <img class="" src="./images/pubdowesley/pubdowesley3.png" alt="Imagem demonstrativa da pargina pubdowesley">
+            <img class="" src="./images/pubdowesley/pubdowesley1.png" alt="Imagem demonstrativa da pargina pubdowesley">
           </div>
         </div>
       </div>
@@ -231,7 +241,7 @@
     </section>
   </main>
 
-  <footer class="primarySecondary d-flex flex-column p-5 align-items-center">
+  <footer class="primarySecondary d-flex flex-column p-5 align-items-center min-vw-100">
     <a href="https://github.com/patrickWarley/patrickwarley.github.io">Desenvolvido por Patrick Warley</a>
   </footer>
 

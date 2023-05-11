@@ -35,7 +35,6 @@ function setIntersectionObserver() {
 }
 
 // project animations
-
 function setExpand(evt) {
   const parent = evt.target.parentElement.parentElement;
 
@@ -56,10 +55,30 @@ function getProjectImages() {
   for (let image of images) image.addEventListener('click', setExpand);
 }
 
-function init() {
+//Loading animation
+// I will wait until the background image of the main section is loaded
 
+function loaded() {
+  let loadingScreen = document.querySelector(".loading");
+
+  setTimeout(() => {
+    if (loadingScreen) loadingScreen.classList.add('close-loading');
+  }, 2000);
+
+}
+
+function getBgImage() {
+
+  let downloadImage = new Image();
+  downloadImage.addEventListener('load', loaded);
+  downloadImage.addEventListener('error', () => console.error('Image not loaded!'));
+  downloadImage.src = "..//images/fundo.png";
+}
+
+function init() {
   setIntersectionObserver();
   getProjectImages();
+  getBgImage();
 }
 
 
