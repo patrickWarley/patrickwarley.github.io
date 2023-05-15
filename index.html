@@ -53,7 +53,7 @@
     </nav>
   </header>
 
-  <aside>
+  <aside class="d-none d-md-block">
     <nav class="d-flex flex-column p-4 position-fixed top-50 z-index-top">
       <div class="redesNav">
         <div class="p-3">
@@ -73,7 +73,8 @@
   <main class="min-vh-100 min-vw-100 overflow-hidden">
     <section aria-hidden="true"
       class="position-relative d-flex flex-column min-vh-100 hero overflow-hidden justify-content-center">
-      <div class="tecnologies d-flex position-absolute top-0">
+
+      <div class="d-none d-md-flex tecnologies  position-absolute top-0">
         <div class="icon-group d-flex justify-content-around">
           <i class="devicon-nodejs-plain"></i>
           <i class="devicon-java-plain-wordmark"></i>
@@ -83,7 +84,7 @@
           <i class="devicon-mongodb-plain-wordmark"></i>
         </div>
       </div>
-      <div class="tecnologies d-flex position-absolute bottom-0">
+      <div class="d-none tecnologies d-md-flex position-absolute bottom-0">
         <div class="icon-group2 d-flex justify-content-around">
           <i class="devicon-javascript-plain"></i>
           <i class="devicon-bootstrap-plain-wordmark"></i>
@@ -93,6 +94,7 @@
           <i class="devicon-css3-plain-wordmark"></i>
         </div>
       </div>
+
       <div id="hero-background" class="position-absolute"></div>
       <div id="hero-content" class="align-items-center d-flex position-absolute p-menuleft p-menuright">
         <div class="content ms-5">
@@ -104,7 +106,7 @@
       </div>
     </section>
 
-    <section id="summary" class=" primarySecondary min-vh-100">
+    <section id="summary" class=" primarySecondary min-vh-100 p-5">
       <div class="summary p-menuleft p-menuright">
         <div class="reveal pb-5">
           <div>
@@ -113,14 +115,15 @@
               Meu nome e Patrick, e eu acredito que aprender seja a melhor coisa do mundo.
             </p>
             <p> Meu interesse por programação nasceu a alguns anos quando eu vi que programar exige que você se
-              mantenha sempre aprendendo. E esse aprendizado engloba não só as tecnologias utilizadas no dia-a-dia, que
-              estão sempre mudando, como também a realidade das pessoas que vão utilizar as minhas aplicações.
+              mantenha sempre aprendendo.</p>
+            <p>Aprender não só sobre tecnologia como também sobre a realidade das pessoas que
+              vão utilizar as minhas aplicações.
             </p>
           </div>
         </div>
         <div class="reveal">
           <p>Tecnologias com as quais estou trabalhando atualmente:</p>
-          <ul class="row w-50">
+          <ul class="row w-md-50">
             <div class="col">
               <li class="type"><span class="text-gold">></span> NodeJs</li>
               <li><span class="text-gold">></span> React</li>
@@ -138,29 +141,37 @@
       </div>
     </section>
     <section id="projects" class="primarySecondary min-vh-100 p-menuleft pb-5">
-      <h2 class="reveal">Projetos</h2>
+      <h2 class="reveal p-4">Projetos</h2>
 
-      <div class="p-5 project d-flex justify-content-center align-items-center">
-        <div class="p-5 mt-5  w-50 project-descr reveal">
-          <h5><a href="https://patrickwarley.github.io/barbearia/" target="_blank"> Barbearia Corte Certo </a></h5>
-          <p>
-            Esse foi o primeiro site criado em grupo durante o meu curso de Desenvolvimento fullstack.
-            O desafio era desenvolver o site de um comércio local, utilizando apenas html, css e javascript.
+      <h4 class="d-none d-md-block p-5 pb-0 reveal">Web site</h4>
+      <div class="p-2 mb-5 m-md-0 p-md-5 pt-0 project d-flex justify-content-center align-items-center">
 
-          <ul class="tecnlogies-projects">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-          </ul>
+        <div class="w-75 p-md-5 mt-md-5 w-md-50 project-descr border border-2 corte-certo reveal">
+          <div class="px-5 py-5 px-md-0 py-md-0 text">
+            <h5>
+              <a href="https://patrickwarley.github.io/barbearia/" target="_blank">
+                Barbearia Corte Certo
+              </a>
+            </h5>
+            <p>
+              Esse foi o primeiro site criado em grupo durante o meu curso de Desenvolvimento fullstack.
+              O desafio era desenvolver o site de um comércio local, utilizando apenas html, css e javascript.
 
-          <a href="https://github.com/patrickWarley/barbearia" title="Link for GitHub repo" style="display: block;"
-            target="_blank">
-            <i class="fa-brands iconredes fa-github"></i>
-          </a>
+            <ul class="tecnlogies-projects">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+            </ul>
 
-          </p>
+            <a href="https://github.com/patrickWarley/barbearia" title="Link for GitHub repo" style="display: block;"
+              target="_blank">
+              <i class="fa-brands iconredes fa-github"></i>
+            </a>
+            </p>
+          </div>
         </div>
-        <div class="w-75 img-project img-project-left d-flex justify-content-around reveal">
+
+        <div class="d-none d-md-flex w-75 img-project img-project-left justify-content-around reveal">
           <div class="col project-click reveal">
             <img class="" src="./images/cortecerto/corte-certo3.png" alt="Home Page da pagina barbearia corte certo">
           </div>
@@ -177,10 +188,15 @@
         </div>
       </div>
 
-      <div class="p-5 project d-flex justify-content-center align-items-center flex-row-reverse">
-        <div class="p-5 mt-5 w-50 project-descr reveal">
-          <div class="ps-5">
-            <h5><a href="https://patrickwarley.github.io/PubDoWesley/" target="_blank"> Pub do Wesley</a>
+      <h4 class="d-none d-md-block p-5 pb-0 reveal">Web site</h4>
+      <div
+        class="p-2 mb-5 m-md-0 p-md-5 pt-0 project d-flex justify-content-center align-items-center flex-row-reverse">
+        <div class="w-75 p-md-5 mt-md-5 w-md-50 project-descr border border-2 pubdowesley reveal">
+          <div class="px-5 py-5 px-md-0 py-md-0 text ps-md-5">
+            <h5>
+              <a href="https://patrickwarley.github.io/PubDoWesley/" target="_blank">
+                Pub do Wesley
+              </a>
             </h5>
             <p>
               Nesse projeto em grupo nos decidimos utilizar o react para a construção do nosso front-end e também
@@ -202,7 +218,7 @@
             </p>
           </div>
         </div>
-        <div class="w-50 img-project img-project-right d-flex justify-content-around reveal">
+        <div class="d-none d-md-flex w-50 img-project img-project-right justify-content-around reveal">
           <div class="col project-click reveal">
             <img class="" src="./images/pubdowesley/pubdowesley3.png" alt="Home Page da pagina pub do wesley">
           </div>
@@ -219,24 +235,12 @@
       </div>
 
     </section>
-    <section id="contact" class="primarySecondary min-vh-100 pt-5">
-      <div class='reveal p-menuleft p-menuright'>
-        <form action="#" class="w-100 d-flex align-items-center flex-column">
-          <h1 class="">Contato</h1>
-
-          <div class="w-75">
-            <input class="mx-auto m-2 form-control w-50" type="text" placeholder="Nome" id="name" required />
-          </div>
-
-          <div class="w-75">
-            <input class="mx-auto m-2 w-50 form-control" type="email" placeholder="Email" id="emai" required />
-          </div>
-          <div class="w-75">
-            <textarea class="w-50 mx-auto m-2 form-control" name="message" placeholder="Mensagem" id="message" cols="30"
-              rows="10" required></textarea>
-          </div>
-          <button type="submit" class="px-4 py-3 mt-5 submitbutton">Enviar</button>
-        </form>
+    <section id="contact" class="primarySecondary pt-5">
+      <div class='reveal p-menuleft p-menuright vh-100 d-flex align-items-center flex-column'>
+        <h3 class="p-5">Entre em contato</h3>
+        <p>Duvidas, sugestões, ideias são sempre bem-vindos.</p>
+        <p>Se o meu trabalho te interressou ...</p>
+        <a href="mailto:patrickwarley@gmail.com" class="p-3 rounded email-button">Enviar email</a>
       </div>
     </section>
   </main>

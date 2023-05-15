@@ -43,14 +43,6 @@ section {
   scroll-margin-top: 0;
 }
 
-.p-menuleft {
-  padding-left: 100px;
-}
-
-.p-menuright {
-  padding-right: 100px;
-}
-
 body {
   font-family: 'Antonio', sans-serif !important;
 }
@@ -83,19 +75,50 @@ p {
 /*bigger screens configs*/
 @media(min-width:768px) {
 
-  .mainTitle {
-    font-size: 5em !important;
-  }
-
-  .tab {
-    margin-left: 0.4em;
-  }
 
   #summary {
     padding-left: 100px;
   }
 
-  #contact {}
+  .p-menuleft {
+    padding-left: 100px;
+  }
+
+  .p-menuright {
+    padding-right: 100px;
+  }
+
+
+  /*hero section*/
+
+  #hero-background:has(+ #hero-content .content h2:hover) {
+    min-height: 200px;
+    --mask:
+      radial-gradient(25.61px at 50% 36.00px, #000 99%, #0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
+      radial-gradient(25.61px at 50% -16px, #0000 99%, #000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
+      radial-gradient(25.61px at 50% calc(100% - 36.00px), #000 99%, #0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
+      radial-gradient(25.61px at 50% calc(100% + 16.00px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+
+  h2:hover+.call-to-action {
+    visibility: hidden;
+  }
+
+  /*Projects section*/
+  .project-descr {
+    background-color: var(--gray) !important;
+    color: var(--gold);
+  }
+
+  .project-descr.project-descr.corte-certo {
+    background-image: none !important;
+  }
+
+  .project-descr.pubdowesley {
+    background-image: none !important;
+  }
 }
 
 /*main section*/
@@ -161,21 +184,6 @@ p {
   transition: min-height 0.5s;
 }
 
-#hero-background:has(+ #hero-content .content h2:hover) {
-  min-height: 200px;
-  --mask:
-    radial-gradient(25.61px at 50% 36.00px, #000 99%, #0000 101%) calc(50% - 40px) 0/80px 51% repeat-x,
-    radial-gradient(25.61px at 50% -16px, #0000 99%, #000 101%) 50% 20px/80px calc(51% - 20px) repeat-x,
-    radial-gradient(25.61px at 50% calc(100% - 36.00px), #000 99%, #0000 101%) calc(50% - 40px) 100%/80px 51% repeat-x,
-    radial-gradient(25.61px at 50% calc(100% + 16.00px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px calc(51% - 20px) repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-}
-
-h2:hover+.call-to-action {
-  visibility: hidden;
-}
-
 .hero {
   background-color: black;
 }
@@ -199,7 +207,7 @@ h2:hover+.call-to-action {
 }
 
 #hero-content .content h2 {
-  font-size: clamp(20px, 8vw, 40px);
+  font-size: clamp(10px, 8vw, 20px);
 }
 
 .call-to-action {
@@ -222,6 +230,15 @@ h2:hover+.call-to-action {
 /*Contact section*/
 #contact {}
 
+.email-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.email-button:hover {
+  color: var(--gold);
+}
 
 .submitbutton {
   padding: 20px;
@@ -242,6 +259,24 @@ h2:hover+.call-to-action {
 
 /*Projets*/
 .project {}
+
+.project-descr.corte-certo {
+  background-image: url("../images/cortecerto/corte-certo1.png");
+}
+
+.project-descr.pubdowesley {
+  background-image: url("../images/pubdowesley/pubdowesley3.png");
+}
+
+.project-descr {
+  background-color: var(--gray);
+  color: var(--gold);
+}
+
+.project-descr .text {
+  backdrop-filter: grayscale(100%) blur(2px);
+}
+
 
 .img-project {
   min-width: 500px;
@@ -280,12 +315,6 @@ h2:hover+.call-to-action {
 
 .img-project .expand {
   max-width: 80% !important;
-}
-
-
-.project-descr {
-  background-color: var(--gray);
-  color: var(--gold);
 }
 
 .img-project .reveal {
